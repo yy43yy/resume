@@ -109,5 +109,10 @@ footer {
 }
 
 footer a {
-
-    
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+footer a:hover {
+    text-decoration: underline;
+}
