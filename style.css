@@ -158,3 +158,21 @@ footer a:hover {
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
+
+#projects {
+    background: linear-gradient(to right, hsla(283, 76%, 46%, 0.781), #3811e9);;
+    color: black;
+    text-align: center;
+    padding: 5rem 1rem;
+    font-size: 1.5rem;
+}
+
+#project h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#project p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
