@@ -41,6 +41,13 @@ nav ul li a{
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
 section{
@@ -91,12 +98,14 @@ section{
     flex-wrap: wrap;
     gap:1rem;
     justify-content: center;
+    padding: 1rem;
 }
 .skills div{
     background-color: #f4f4f4;
     padding: 1rem;
     border-radius: 5px;
     width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
