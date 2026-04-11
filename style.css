@@ -176,3 +176,19 @@ footer a:hover {
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
+
+#skills{
+    background:linear-gradient(to right,black,white);
+    text-align: center;
+    padding: 5rem 1rem;
+    font-size:1.5rem;
+}
+#skills h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+#skills p{
+    font-size: 1.2rem; 
+}
