@@ -1,194 +1,229 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin:0;
-    padding: 0;
-    line-height: 1.6;
+body {
+  font-family: "inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1rem;
+  color: #555;
 }
 
-header{
-    background-color: black;
-    color: white;
-    padding:1rem;
-    text-align: center;
+header {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
 nav {
-    position: sticky;
-    top:0;
-    z-index: 1000;
-    background-color: #444;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-nav ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #444;
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #444;
 }
 
-nav ul li{
-    margin: 0 1rem;
+nav ul li {
+  margin: 0 1rem;
 }
 
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: block;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+  background-color: #555;
+  border-radius: 5px;
 }
 
-section{
-    padding: 2rem;
+section {
+  padding: 2rem;
 }
 
 /* For screens smaller than 768px (tablet) */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    nav ul li {
-        margin-bottom: 1rem;
-    }
+  nav ul li {
+    margin-bottom: 1rem;
+  }
 
-    section {
-        padding: 1rem;
-    }
+  section {
+    padding: 1rem;
+  }
 }
 
 /* For screens smaller than 480px (mobile) */
 @media (max-width: 480px) {
-    header {
-        font-size: 1.2rem;
-    }
+  header {
+    font-size: 1.2rem;
+  }
 
-    nav ul li {
-        margin-bottom: 0.5rem;
-    }
+  nav ul li {
+    margin-bottom: 0.5rem;
+  }
 
-    h1 {
-        font-size: 1.5rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+  }
 
-    h2 {
-        font-size: 1.2rem;
-    }
+  h2 {
+    font-size: 1.2rem;
+  }
 
-    p {
-        font-size: 1rem;
-    }
+  p {
+    font-size: 1rem;
+  }
 }
 
 .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap:1rem;
-    justify-content: center;
-    padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
 }
-.skills div{
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 5px;
-    width: 150px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.skills div {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 footer {
-    background-color: #333;
-    color:white;
-    text-align: center;
-    padding:1rem;
-    margin-top: 2rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 footer a {
-    color: #00bcd4;
-    text-decoration: none;
-    margin: 0 0.5rem;
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 0 0.5rem;
 }
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #hero {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: white;
-    text-align: center;
-    padding: 5rem 1rem;
-    font-size: 1.5rem;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  font-size: 1.5rem;
 }
 
 #hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 #hero p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #about {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    text-align: center;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
 }
 
 #about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 #about p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
 #projects {
-    background: linear-gradient(to right, hsla(283, 76%, 46%, 0.781), #3811e9);;
-    color: black;
-    text-align: center;
-    padding: 5rem 1rem;
-    font-size: 1.5rem;
+  background: linear-gradient(to right, hsla(283, 76%, 46%, 0.781), #3811e9);
+  color: black;
+  text-align: center;
+  padding: 5rem 1rem;
+  font-size: 1.5rem;
 }
 
-#project h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-#project p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+#projects p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
-#skills{
-    background:linear-gradient(to right,black,white);
-    text-align: center;
-    padding: 5rem 1rem;
-    font-size:1.5rem;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
-#skills h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-
+.project-card {
+  background: white;
+  color: #222;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.project-card h3 {
+  margin-top: 0;
 }
 
-#skills p{
-    font-size: 1.2rem; 
+#skills {
+  background: linear-gradient(to right, black, white);
+  text-align: center;
+  padding: 5rem 1rem;
+  font-size: 1.5rem;
+}
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#skills p {
+  font-size: 1.2rem;
 }
