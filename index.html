@@ -11,10 +11,12 @@
 
 <body>
   <main>
+    <!-- NAV PAGE -->
+
     <section class="first-page">
-      <img src="photo.jpg" alt="Yi Yang" class="profile-pic" />
       <nav class="first-page-nav">
-        <h1>Yi Yang</h1>
+        <p class="nav-logo">Yi Yang</p>
+
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -22,15 +24,73 @@
           <li><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
-    </section>
-    <section id="hero">
-      <h2>Computer Engineer</h2>
-      <p>Hi I am YY</p>
-      <a href="yy resume final.pdf" download class="download-btn"
-        >Download Resume</a
-      >
+
+      <div class="big-name">Yi Yang</div>
+
+      <div class="first-page-bottom">
+        <div class="photo-train">
+          <img
+            src="assets/photo.jpg"
+            alt="Yi Yang photo 1"
+            class="train-photo active"
+          />
+          <img
+            src="/assets/photo2.jpg"
+            alt="Yi Yang photo 2"
+            class="train-photo"
+          />
+          <img
+            src="assets/photo3.jpg"
+            alt="Yi Yang photo 3"
+            class="train-photo"
+          />
+          <img
+            src="assets/photo4.jpg"
+            alt="Yi Yang photo 4"
+            class="train-photo"
+          />
+        </div>
+
+        <div class="role-block">
+          <h1 class="typed-heading">
+            <span id="typed-role"></span><span class="typing-cursor">|</span>
+          </h1>
+
+          <p>
+            I build software, systems, and hardware projects with a focus on
+            practical engineering.
+          </p>
+
+          <a href="#projects" class="outline-btn">View Projects</a>
+        </div>
+      </div>
+      <div class="quick-info">
+        <p>Based in Singapore</p>
+        <p>Computer Engineering @ NUS</p>
+        <p>Software · IoT · Systems</p>
+      </div>
     </section>
 
+    <!-- INTO PAGE -->
+    <section id="hero">
+      <p class="eyebrow">Computer Engineering Student</p>
+
+      <h2>Building software, systems, and hardware projects.</h2>
+
+      <p class="hero-description">
+        I am Yi Yang, a Computer Engineering student interested in software
+        development, IoT, robotics, and systems engineering.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="primary-btn">View Projects</a>
+        <a href="yy resume final.pdf" download class="secondary-btn"
+          >Download Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- About -->
     <section id="about">
       <h2>About</h2>
       <p>
@@ -43,25 +103,29 @@
       </p>
     </section>
 
-    <section id="projects" class="project-grid">
+    <!-- Project -->
+    <section id="projects">
       <h2>Projects</h2>
 
-      <article class="project-card">
-        <h3>Project 1</h3>
-        <p>des</p>
-      </article>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Project 1</h3>
+          <p>des</p>
+        </article>
 
-      <article class="project-card">
-        <h3>Projecct 2</h3>
-        <p>des</p>
-      </article>
+        <article class="project-card">
+          <h3>Projecct 2</h3>
+          <p>des</p>
+        </article>
 
-      <article class="project-card">
-        <h3>Projecct 3</h3>
-        <p>des</p>
-      </article>
+        <article class="project-card">
+          <h3>Projecct 3</h3>
+          <p>des</p>
+        </article>
+      </div>
     </section>
 
+    <!-- SKILL SECTION -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="skill">
@@ -84,20 +148,64 @@
       </div>
     </section>
 
+    <!-- CONTACTS SECTION -->
     <section id="contacts">
       <h2>contacts</h2>
       <p>Phone:+65 83095857</p>
       <p>Email: yiyang15624@gmail.com</p>
     </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <p>© 2026 yy</p>
+      <p>
+        <a href="https://github.com/yy43yy" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/yiyangnus/" target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
   </main>
 
-  <footer>
-    <p>© 2026 yy</p>
-    <p>
-      <a href="https://github.com/yy43yy" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/yiyangnus/" target="_blank"
-        >LinkedIn</a
-      >
-    </p>
-  </footer>
+  <script>
+    const roles = [
+      "Full Stack Engineer",
+      "Software Developer",
+
+      "Systems Engineer",
+    ];
+
+    const typedRole = document.getElementById("typed-role");
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const currentRole = roles[roleIndex];
+
+      if (!isDeleting) {
+        typedRole.textContent = currentRole.slice(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentRole.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1200);
+          return;
+        }
+      } else {
+        typedRole.textContent = currentRole.slice(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      }
+
+      setTimeout(typeEffect, isDeleting ? 45 : 80);
+    }
+
+    typeEffect();
+  </script>
 </body>
