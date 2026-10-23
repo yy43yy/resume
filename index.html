@@ -1,211 +1,66 @@
 <!doctype html>
-
+<html lang="en">
 <head>
-  <!-- <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YY | Resume</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yi Yang — Computer Engineering at NUS and Software Engineering Intern at MediaTek. Selected work in mobile apps, backend systems, and digital hardware.">
+  <meta name="theme-color" content="#f5f3ec">
+  <meta property="og:title" content="Yi Yang | Software, systems & a little curiosity">
+  <meta property="og:description" content="Computer Engineering at NUS. Explore my projects, experience, and the person behind the work.">
+  <meta property="og:type" content="website">
+  <title>Yi Yang | Software & Systems</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>try{const t=localStorage.getItem('yy-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.theme='dark'}catch{}</script>
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <main>
-    <!-- NAV PAGE -->
-
-    <section class="first-page">
-      <nav class="first-page-nav">
-        <p class="nav-logo">Yi Yang</p>
-
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
-
-      <div class="big-name">Yi Yang</div>
-
-      <div class="first-page-bottom">
-        <div class="photo-train">
-          <img
-            src="assets/photo.jpg"
-            alt="Yi Yang photo 1"
-            class="train-photo active"
-          />
-          <img
-            src="/assets/photo2.jpg"
-            alt="Yi Yang photo 2"
-            class="train-photo"
-          />
-          <img
-            src="assets/photo3.jpg"
-            alt="Yi Yang photo 3"
-            class="train-photo"
-          />
-          <img
-            src="assets/photo4.jpg"
-            alt="Yi Yang photo 4"
-            class="train-photo"
-          />
-        </div>
-
-        <div class="role-block">
-          <h1 class="typed-heading">
-            <span id="typed-role"></span><span class="typing-cursor">|</span>
-          </h1>
-
-          <p>
-            I build software, systems, and hardware projects with a focus on
-            practical engineering.
-          </p>
-
-          <a href="#projects" class="outline-btn">View Projects</a>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Yi Yang, home">yy<span class="accent" aria-hidden="true">✳</span></a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contacts">Contact ↗</a></nav>
+    <a class="header-resume" href="yi-yang-resume.pdf" download="Yi-Yang-Resume.pdf">Résumé <span aria-hidden="true">↓</span></a>
+  </header>
+  <main id="main">
+    <section class="hero shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-topline"><span class="eyebrow"><span class="status-dot"></span> Computer Engineering @ NUS</span><span class="location">Singapore ↗</span></div>
+      <div class="hero-title-wrap">
+        <h1 id="hero-title">Hi, I’m Yi Yang<span class="accent">.</span></h1>
+        <button class="theme-lamp" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span class="lamp-cord"></span><span class="lamp-shade"></span><span class="lamp-bulb"></span><span class="lamp-glow"></span><span class="lamp-label">lights off?</span></button>
       </div>
-      <div class="quick-info">
-        <p>Based in Singapore</p>
-        <p>Computer Engineering @ NUS</p>
-        <p>Software · IoT · Systems</p>
+      <div class="hero-bottom">
+        <div class="photo-area"><div class="photo-stack" aria-label="A few moments from my life">
+          <button class="photo-card photo-one" type="button" aria-label="Bring forward: with friends" aria-pressed="false"><img src="assets/photo2.jpg" width="1280" height="960" alt="Yi Yang and a friend at a restaurant"><span>good company.</span></button>
+          <button class="photo-card photo-two" type="button" aria-label="Bring forward: on the court" aria-pressed="false"><img src="assets/photo4.jpg" width="640" height="640" alt="Yi Yang playing a ball sport on an outdoor court"><span>off the screen.</span></button>
+          <button class="photo-card photo-three" type="button" aria-label="Bring forward: exploring" aria-pressed="false"><img src="assets/photo3.jpg" width="1280" height="853" alt="Yi Yang sitting outdoors during a day out"><span>a little exploring.</span></button>
+          <button class="photo-card photo-four is-front" type="button" aria-label="Bring forward: a candid portrait" aria-pressed="true"><img src="assets/photo.jpg" width="640" height="640" alt="A candid portrait of Yi Yang under warm lights" fetchpriority="high"><span>usually curious.</span></button>
+        </div><p class="photo-caption">↖ &nbsp; a few frames beyond the code <span>(tap to shuffle)</span></p></div>
+        <div class="hero-intro"><p class="eyebrow accent">Software. Systems. Something useful.</p><h2>I like figuring things out.<br>Then building them.</h2><p>From mobile apps to backend systems and digital hardware. I’m a Computer Engineering student at NUS, turning ideas into things people can use.</p><div class="hero-actions"><a class="button" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="yi-yang-resume.pdf" download="Yi-Yang-Resume.pdf">Download résumé ↓</a></div></div>
       </div>
+      <div class="hero-foot"><span><span class="status-dot green"></span> Currently building at MediaTek</span><a href="#about">A little more about me ↓</a><span class="mono">01 / INTRODUCTION</span></div>
     </section>
-
-    <!-- INTO PAGE -->
-    <section id="hero">
-      <p class="eyebrow">Computer Engineering Student</p>
-
-      <h2>Building software, systems, and hardware projects.</h2>
-
-      <p class="hero-description">
-        I am Yi Yang, a Computer Engineering student interested in software
-        development, IoT, robotics, and systems engineering.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="primary-btn">View Projects</a>
-        <a href="yy resume final.pdf" download class="secondary-btn"
-          >Download Resume</a
-        >
-      </div>
+    <section id="about" class="shell section" aria-labelledby="about-title">
+      <div class="section-kicker"><span class="eyebrow">01 — A LITTLE CONTEXT</span><span class="mono">THE PERSON BEHIND THE PROJECTS</span></div>
+      <div class="about-layout"><h2 id="about-title">Curiosity is<br>the starting point<span class="accent">.</span></h2><div class="about-copy"><p class="large-copy">I’m Yi Yang, studying Computer Engineering at the National University of Singapore.</p><p>I enjoy working across the stack: shaping an interface, connecting it to a backend, and understanding the systems underneath. My projects span peer-to-peer rentals, grant discovery, task management, and FPGA-based digital logic.</p><p>Away from the keyboard, I serve as Head of Marketing for the Raffles Hall Promotion Board and Vice Captain of Raffles Hall Floorball. Teamwork is a big part of how I learn and build.</p><div class="about-facts"><div><span class="eyebrow">EDUCATION</span><strong>B.Eng. Computer Engineering</strong><span>NUS · 2024–2028 (expected)</span></div><div><span class="eyebrow">SCHOLARSHIP</span><strong>Science & Technology Scholar</strong><span>National University of Singapore</span></div></div></div></div>
     </section>
-
-    <!-- About -->
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am YY, a passionate Computer Engineer with experience in software
-        development, hardware design, and problem-solving.
-      </p>
-      <p>
-        I specialize in creating efficient and scalable solutions for complex
-        problems.
-      </p>
+    <section id="experience" class="shell section experience-section" aria-labelledby="experience-title">
+      <div class="section-kicker"><span class="eyebrow">02 — LEARNING BY DOING</span><span class="mono">EXPERIENCE</span></div>
+      <div class="experience-layout"><h2 id="experience-title">Building in<br>the real world.</h2><article class="experience-card"><div class="experience-heading"><div><span class="company-label">MediaTek</span><h3>Software Engineering Intern</h3></div><span class="date-tag">Jun 2026 — Present</span></div><p>Working on internal applications, backend services, and the workflows that keep them running.</p><ul class="experience-list"><li>Migrated an internal Payload CMS application from v2 to v3, rebuilding LDAP authentication for user verification and synchronisation.</li><li>Developed and debugged backend features across REST APIs, JWTs, sessions, cookies, and middleware.</li><li>Prototyped cron-job monitoring and supported deployment workflows with Gitea CI/CD and PM2.</li></ul><div class="tags"><span>Payload CMS</span><span>LDAP</span><span>Django / Celery</span><span>CI/CD</span></div></article></div>
     </section>
-
-    <!-- Project -->
-    <section id="projects">
-      <h2>Projects</h2>
-
+    <section id="projects" class="shell section" aria-labelledby="projects-title">
+      <div class="section-kicker"><span class="eyebrow">03 — SELECTED WORK</span><span class="mono">IDEAS, BUILT OUT</span></div>
+      <div class="section-heading"><div><h2 id="projects-title">A few things I’ve built<span class="accent">.</span></h2><p>Different problems. The same hands-on curiosity.</p></div><div class="project-filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All <span>04</span></button><button type="button" data-filter="software" aria-pressed="false">Software</button><button type="button" data-filter="hardware" aria-pressed="false">Hardware</button></div></div>
+      <p class="sr-only" id="filter-status" role="status" aria-live="polite">Showing all 4 projects.</p>
       <div class="project-grid">
-        <article class="project-card">
-          <h3>Project 1</h3>
-          <p>des</p>
-        </article>
-
-        <article class="project-card">
-          <h3>Projecct 2</h3>
-          <p>des</p>
-        </article>
-
-        <article class="project-card">
-          <h3>Projecct 3</h3>
-          <p>des</p>
-        </article>
-      </div>
+        <article class="project-card" data-category="software"><div class="project-art rental-art" role="img" aria-label="Illustrative interface concept for CanIRent"><span class="art-index">01 / MOBILE</span><div class="art-word">Borrow more.<br><em>Buy less.</em></div><div class="phone"><div class="phone-bar"><span>9:41</span><span>•••</span></div><div class="phone-heading">CanIRent ↗</div><div class="phone-search">⌕ &nbsp; Find your next borrow</div><div class="phone-tabs"><b>For you</b><span>Electronics</span><span>Outdoor</span></div><div class="mini-listings"><div><span>♫</span><b>For the weekend</b><small>Explore nearby</small></div><div><span>▣</span><b>For the next trip</b><small>Find what you need</small></div><div><span>◎</span><b>For a new hobby</b></div><div><span>⌁</span><b>For a good time</b></div></div><div class="phone-nav">⌂ &nbsp; ⌕ &nbsp; ＋ &nbsp; ♡</div></div><span class="art-caption">INTERFACE CONCEPT</span></div><div class="project-body"><div class="project-meta"><span>Orbital · 2025</span><span>React Native / Supabase</span></div><h3>CanIRent</h3><p>A peer-to-peer rental marketplace that connects people with the things they need, without needing to own them.</p><details><summary>Inside the build <span aria-hidden="true">＋</span></summary><div class="project-details"><p>Built with React Native (Expo) and Supabase, with item listings, image uploads, real-time search, detailed item pages, and owner–renter interactions.</p><p>Focused on clean layouts, efficient state management, and reliable backend integration on iOS.</p></div></details></div></article>
+        <article class="project-card" data-category="software"><div class="project-art granted-art" role="img" aria-label="Illustrative grant discovery concept for Granted"><span class="art-index">02 / SOCIAL GOOD</span><div class="art-word">Good causes.<br><em>Better matches.</em></div><div class="grant-back"></div><div class="grant-preview"><div class="grant-logo">g<span>granted.</span></div><span class="grant-type">FIND YOUR NEXT OPPORTUNITY</span><div class="match-label">✳ &nbsp; AI-assisted matching</div><h4>More time for<br>your mission.</h4><p>Grant discovery, with your<br>organisation in mind.</p><div class="grant-lines"><span></span><span></span></div><div class="swipe-actions"><span>×</span><span>♡</span></div></div><span class="art-caption">INTERFACE CONCEPT</span></div><div class="project-body"><div class="project-meta"><span>Hack4Good · 2026</span><span>Product / Interface design</span></div><h3>Granted</h3><p>Helping nonprofits navigate funding opportunities with a faster, more intuitive way to find relevant grants.</p><details><summary>Inside the build <span aria-hidden="true">＋</span></summary><div class="project-details"><p>Designed a swipe-based interface for quick grant triaging, with an AI match score that highlights alignment between opportunities and an organisation’s profile, needs, and priorities.</p></div></details></div></article>
+        <article class="project-card" data-category="software"><div class="project-art chatbot-art" role="img" aria-label="Illustrative terminal session for the Java task chatbot"><span class="art-index">03 / SOFTWARE ENGINEERING</span><div class="terminal"><div class="terminal-top"><span>● ● ●</span><span>yy / tasks</span><span>⌘</span></div><div class="terminal-content"><p class="terminal-muted">// a little order in the everyday</p><p>Hey, I’m YY.<br>What’s on your list today?</p><p><span>›</span> todo build something useful</p><p class="terminal-muted">&nbsp; Got it. Added to your tasks.</p><p><span>›</span> list</p><p class="terminal-task">&nbsp; [T] [ ] build something useful</p><p><span>›</span> _</p></div></div><span class="art-caption">ILLUSTRATIVE SESSION</span></div><div class="project-body"><div class="project-meta"><span>CS2113</span><span>Java / OOP</span></div><h3>YY task chatbot</h3><p>A command-based companion for keeping tasks, deadlines, and everyday plans in order.</p><details><summary>Inside the build <span aria-hidden="true">＋</span></summary><div class="project-details"><p>Developed a Java task-tracking chatbot with task creation, deadline management, and command-based interaction. Implemented object-oriented components for task handling, input parsing, and storage.</p></div></details></div></article>
+        <article class="project-card" data-category="hardware"><div class="project-art fpga-art" role="img" aria-label="Illustration of digital hardware and a graphing calculator"><span class="art-index">04 / DIGITAL HARDWARE</span><div class="board"><div class="board-label">BASYS 3 <span>DIGITAL LOGIC</span></div><div class="board-screen"><svg viewBox="0 0 240 120" aria-hidden="true"><path class="graph-grid" d="M0 30H240M0 60H240M0 90H240M40 0V120M80 0V120M120 0V120M160 0V120M200 0V120"/><path class="graph-axis" d="M0 85H240M70 0V120"/><path class="graph-curve" d="M10 108 Q70 -65 130 70 T250 18"/></svg><span>f(x) = curiosity</span></div><div class="board-bottom"><span class="chip">FPGA</span><span>▥ ▥ ▥ ▥</span><span class="board-leds">● ● ● ●</span></div></div><span class="art-caption">HARDWARE ILLUSTRATION</span></div><div class="project-body"><div class="project-meta"><span>Electrical engineering projects</span><span>Verilog / Vivado</span></div><h3>From logic to hardware</h3><p>Digital logic on a Basys 3 FPGA, and a graphing calculator for exploring the maths behind the screen.</p><details><summary>Inside the build <span aria-hidden="true">＋</span></summary><div class="project-details"><p>Programmed and tested digital logic designs on a Basys 3 FPGA using Verilog. Also built a graphing calculator supporting basic arithmetic, graph plotting, and simultaneous equations.</p></div></details></div></article>
+      </div><div class="projects-footer"><p>More experiments live on GitHub.</p><a class="text-link" href="https://github.com/yy43yy" target="_blank" rel="noopener noreferrer">Explore my GitHub ↗</a></div>
     </section>
-
-    <!-- SKILL SECTION -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skill">
-        <p>HTML</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 90%"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <p>CSS</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 80%"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <p>JavaScript</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 70%"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTS SECTION -->
-    <section id="contacts">
-      <h2>contacts</h2>
-      <p>Phone:+65 83095857</p>
-      <p>Email: yiyang15624@gmail.com</p>
-    </section>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-      <p>© 2026 yy</p>
-      <p>
-        <a href="https://github.com/yy43yy" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/yiyangnus/" target="_blank"
-          >LinkedIn</a
-        >
-      </p>
-    </footer>
+    <section id="skills" class="shell section skills-section" aria-labelledby="skills-title"><div class="section-kicker"><span class="eyebrow">04 — THE TOOLKIT</span><span class="mono">ALWAYS ADDING TO IT</span></div><div class="skills-layout"><div><h2 id="skills-title">The tools behind<br>the tinkering.</h2><p>A mix of software, systems, and hardware.<br>Picked up through coursework and building.</p></div><div class="skill-groups"><div><h3>Languages</h3><p>Java <span>/</span> Python <span>/</span> C++ <span>/</span> JavaScript <span>/</span> HTML & CSS</p></div><div><h3>Apps & interfaces</h3><p>React <span>/</span> React Native <span>/</span> Expo <span>/</span> Supabase <span>/</span> Figma</p></div><div><h3>Backend & workflows</h3><p>Payload CMS <span>/</span> REST APIs <span>/</span> Django <span>/</span> Celery <span>/</span> Gitea CI/CD <span>/</span> PM2</p></div><div><h3>Hardware & computation</h3><p>Verilog <span>/</span> Vivado <span>/</span> Arduino <span>/</span> MATLAB <span>/</span> NumPy</p></div></div></div></section>
+    <section id="contacts" class="shell contact-section" aria-labelledby="contact-title"><div class="section-kicker"><span class="eyebrow">05 — SAY HELLO</span><span class="mono">GOOD THINGS START WITH A CONVERSATION</span></div><div class="contact-layout"><div><h2 id="contact-title">Got something<br>in mind<span class="accent">?</span></h2><p>A project, an opportunity, or an interesting idea.<br>I’d love to hear about it.</p></div><div class="contact-actions"><a class="email-link" href="mailto:yiyang15624@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a><div class="email-row"><a href="mailto:yiyang15624@gmail.com">yiyang15624@gmail.com</a><button id="copyEmail" type="button" aria-label="Copy email address">Copy ⧉</button></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div></div><div class="contact-bottom"><div><a href="https://www.linkedin.com/in/yiyangnus/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/yy43yy" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="yi-yang-resume.pdf" download="Yi-Yang-Resume.pdf">Résumé ↓</a></div><span>Based in Singapore. Curious everywhere.</span></div></section>
   </main>
-
-  <script>
-    const roles = [
-      "Full Stack Engineer",
-      "Software Developer",
-
-      "Systems Engineer",
-    ];
-
-    const typedRole = document.getElementById("typed-role");
-
-    let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
-    function typeEffect() {
-      const currentRole = roles[roleIndex];
-
-      if (!isDeleting) {
-        typedRole.textContent = currentRole.slice(0, charIndex + 1);
-        charIndex++;
-
-        if (charIndex === currentRole.length) {
-          isDeleting = true;
-          setTimeout(typeEffect, 1200);
-          return;
-        }
-      } else {
-        typedRole.textContent = currentRole.slice(0, charIndex - 1);
-        charIndex--;
-
-        if (charIndex === 0) {
-          isDeleting = false;
-          roleIndex = (roleIndex + 1) % roles.length;
-        }
-      }
-
-      setTimeout(typeEffect, isDeleting ? 45 : 80);
-    }
-
-    typeEffect();
-  </script>
+  <footer class="site-footer shell"><a class="wordmark" href="#home" aria-label="Back to top">yy<span class="accent" aria-hidden="true">✳</span></a><p>© <span id="year">2026</span> Yi Yang</p><a href="#home">Back to top ↑</a></footer>
 </body>
+</html>
